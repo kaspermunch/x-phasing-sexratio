@@ -72,3 +72,12 @@ bash conda.sh [-c channel -c channel ...]
 # Using submodules with Git
 
 Read on [here](https://gist.github.com/kaspermunch/1131f20216648bd55bb20f6b35e69252)
+singularity build shapeit5.sif docker-archive://shapeit5_v5.1.1.docker.tar.gz 
+
+wget https://github.com/odelaneau/shapeit5/releases/download/v5.1.1/phase_common_static
+
+wget https://github.com/odelaneau/shapeit5/releases/download/v5.1.1/phase_rare_static
+
+wget https://github.com/odelaneau/shapeit5/releases/download/v5.1.1/switch_static
+
+chmod 755 phase_rare_static phase_common_static switch_static 
